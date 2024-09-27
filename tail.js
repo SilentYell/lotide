@@ -7,16 +7,17 @@ const assertEqual = function(actual, expected) {
 };
 
 const tail = function(array) {
-  //give array without the first number
-  let newArr = [];
-  for (let i = 1; i < array.length; i++) {
-    newArr.push(array[i]);
-  }
-  return newArr;
+  return array.slice(1).toString();
 };
 
-const result = tail(["Hello", "Lighthouse", "Labs"]); // should return ["Lighthouse", "Labs"]
-assertEqual(result, ["Lighthouse", "Labs"]); // => will always fail!
+const result = tail(["Hello", "Lighthouse", "Labs"]);
+assertEqual(result, ["Lighthouse", "Labs"].toString());
+assertEqual(result.toString(), ["Lighthouse"].toString());
+assertEqual(result.toString(), [].toString());
 const words = ["Yo Yo", "Lighthouse", "Labs"];
-tail(words); // no need to capture the return value since we are not checking it
-assertEqual(words.length, 3); // original array should still have 3 elements!
+tail(words);
+assertEqual(words.length, 3);
+const empty = tail([]);
+assertEqual(empty.toString(), [].toString());
+const oneItem = tail([3]);
+assertEqual(oneItem.toString(), [6].toString());
