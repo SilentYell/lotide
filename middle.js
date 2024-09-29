@@ -20,3 +20,17 @@ function assertArraysEqual(arr1, arr2) {
 }
 
 
+//For arrays with one or two elements, there is no middle. Return an empty array.
+
+function middle(array) {
+  
+}
+
+// make new array variable
+let arrMid = [];
+//check for array with greater then 2 elements
+if (arrMid.length > 2 ) {
+  return arrMid;
+} 
+
+//check if even or odd array length
