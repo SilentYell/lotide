@@ -23,10 +23,16 @@ function assertArraysEqual(arr1, arr2) {
 //Create a function flatten which will take in an array containing elements including nested arrays of elements, and return a "flattened" version of the array.
 
 function flatten(array) {
-  console.log(array.flat());
-  // for(let i = 0; i < array.length; i++) {
-    // if (array[i])
-  // }
+  let flatArray = [];
+
+  for (let i = 0; i < array.length; i++) {
+    if (Array.isArray(array[i])) {
+      flatArray = flatArray.concat(array[i]);
+  } else {
+    flatArray.push(array[i]);
+    }
+  }
+  console.log(flatArray);
 }
 
 
