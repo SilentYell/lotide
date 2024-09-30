@@ -8,7 +8,13 @@ function assertEqual(actual, expected) {
 
 // allItems: an array of strings that we need to look through
 // itemsToCount: an object specifying what to count
-const countOnly = function (allItems, itemsToCount) {};
+const countOnly = function (allItems, itemsToCount) {
+  let stats = {};
+
+  allItems = 
+  itemsToCount = 
+  return stats;
+};
 
 const firstNames = [
   "Karl",
@@ -34,5 +40,3 @@ assertEqual(result1["Karima"], undefined);
 assertEqual(result1["Fang"], 2);
 assertEqual(result1["Agouhanna"], undefined);
 
-
-//const countOnly = function(allItems, itemsToCount)
