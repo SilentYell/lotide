@@ -1,3 +1,5 @@
+const { first } = require("lodash");
+
 function assertEqual(actual, expected) {
   if (actual === expected) {
     console.log(`🤢🤢🤢 Assertion Passed: ${actual} === ${expected}`);
@@ -8,12 +10,9 @@ function assertEqual(actual, expected) {
 
 // allItems: an array of strings that we need to look through
 // itemsToCount: an object specifying what to count
-const countOnly = function (allItems, itemsToCount) {
-  let stats = {};
-
-  allItems = 
-  itemsToCount = 
-  return stats;
+const countOnly = function(allItems, itemsToCount) {
+  const results = {};
+  return results;
 };
 
 const firstNames = [
@@ -39,4 +38,3 @@ assertEqual(result1["Jason"], 1);
 assertEqual(result1["Karima"], undefined);
 assertEqual(result1["Fang"], 2);
 assertEqual(result1["Agouhanna"], undefined);
-
