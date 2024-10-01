@@ -9,8 +9,8 @@ function assertEqual(actual, expected) {
 
 function countLetters(input) {
   let result = {};
-  
-  for (letter of input) {
+
+  for (let letter of input) {
     if (letter !== ' ') {
       if (result[letter]) {
         result[letter]++;
