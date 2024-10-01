@@ -16,7 +16,6 @@ function eqArrays(arr1, arr2) {
   }
 }
 
-
 assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true); // => should PASS
 assertEqual(eqArrays([], [1, 2, 3]), true); //fail
 assertEqual(eqArrays([1], [1]), true); //pass
