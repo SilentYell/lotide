@@ -9,8 +9,7 @@ function assertEqual(actual, expected) {
 
 function countLetters(input) {
   let result = {};
-  input = input.toLowerCase();
-
+  
   for (letter of input) {
     if (letter !== ' ') {
       if (result[letter]) {
@@ -23,7 +22,7 @@ function countLetters(input) {
   return result;
 }
 
-
-console.log(countLetters('icing'));
-console.log(countLetters('Icing'));
-console.log(countLetters('nik Is cool'));
+let result = countLetters('Foot work');
+assertEqual(result['o'], 3);
+assertEqual(result['F'], 1);
+assertEqual(result[''], undefined);
