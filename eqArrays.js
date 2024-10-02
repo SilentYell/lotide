@@ -7,14 +7,13 @@ const assertEqual = function(actual, expected) {
 };
 
 //take two arrays and returns TRUE or FALSE based on a perfect match
-function eqArrays(arr1, arr2) {
+const eqArrays = function(arr1, arr2) {
   if (arr1.toString() === arr2.toString()) {
     return true;
-  }
-  else {
+  } else {
     return false;
   }
-}
+};
 
 assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true); // => should PASS
 assertEqual(eqArrays([], [1, 2, 3]), true); //fail

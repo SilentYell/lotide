@@ -1,5 +1,5 @@
 // Implement without which will return a subset of a given array, removing unwanted elements.
-function eqArrays(arr1, arr2) {
+const eqArrays = function(arr1, arr2) {
   if (arr1.length !== arr2.length) {
     return false;
   }
@@ -9,18 +9,18 @@ function eqArrays(arr1, arr2) {
     }
   }
   return true;
-}
+};
 
 
-function assertArraysEqual(arr1, arr2) {
+const assertArraysEqual = function(arr1, arr2) {
   if (eqArrays(arr1, arr2)) {
     console.log(`🤢 Assertion Passed: ${arr1} === ${arr2}`);
   } else {
     console.log(`🚫 Assertion Failed: ${arr1} !== ${arr2}`);
   }
-}
+};
 
-function without(source, itemsToRemove) {
+const without = function(source, itemsToRemove) {
   const result = [];
 
   for (let i = 0; i < source.length; i++) {
@@ -29,7 +29,7 @@ function without(source, itemsToRemove) {
     }
   }
   return result;
-}
+};
 
 
 

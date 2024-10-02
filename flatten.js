@@ -1,4 +1,4 @@
-function eqArrays(arr1, arr2) {
+const eqArrays = function(arr1, arr2) {
   if (arr1.length !== arr2.length) {
     return false;
   }
@@ -8,32 +8,32 @@ function eqArrays(arr1, arr2) {
     }
   }
   return true;
-}
+};
 
 
-function assertArraysEqual(arr1, arr2) {
+const assertArraysEqual = function(arr1, arr2) {
   if (eqArrays(arr1, arr2)) {
     console.log(`🤢 Assertion Passed: ${arr1} === ${arr2}`);
   } else {
     console.log(`🚫 Assertion Failed: ${arr1} !== ${arr2}`);
   }
-}
+};
 
 
 //Create a function flatten which will take in an array containing elements including nested arrays of elements, and return a "flattened" version of the array.
 
-function flatten(array) {
+const flatten = function(array) {
   let flatArray = [];
 
   for (let i = 0; i < array.length; i++) {
     if (Array.isArray(array[i])) {
       flatArray = flatArray.concat(array[i]);
-  } else {
-    flatArray.push(array[i]);
+    } else {
+      flatArray.push(array[i]);
     }
   }
   console.log(flatArray);
-}
+};
 
 
 

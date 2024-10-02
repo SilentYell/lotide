@@ -1,13 +1,13 @@
-function assertEqual(actual, expected) {
+const assertEqual = function(actual, expected) {
   if (actual === expected) {
     console.log(`🤢🤢🤢 Assertion Passed: ${actual} === ${expected}`);
   } else {
     console.log(`🚫🚫🚫 Assertion Failed: ${actual} !== ${expected}`);
   }
-}
+};
 
 
-function countLetters(input) {
+const countLetters = function(input) {
   let result = {};
 
   for (let letter of input) {
@@ -20,7 +20,7 @@ function countLetters(input) {
     }
   }
   return result;
-}
+};
 
 let result = countLetters('Foot work');
 assertEqual(result['o'], 3);
