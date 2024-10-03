@@ -23,9 +23,8 @@ const eqObjects = function(object1, object2) {
   if (keys1.length !== keys2.length) {
     return false;
   }
-  //needed some chat GPT help to guide me through some logic. Got overwhelmed trying to add too much code and over complicating. Then got lost
   for (let key of keys1) {
-    if (Array.isArray(object1[key] && Array.isArray(object2[key]))) {
+    if (Array.isArray(object1[key]) && Array.isArray(object2[key])) {
       if (!eqArrays(object1[key], object2[key])) {
         return false;
       }
@@ -75,3 +74,11 @@ const longSleeveMultiColorShirtObject = {
 };
 
 assertEqual(eqObjects(multiColorShirtObject, longSleeveMultiColorShirtObject), false);
+
+const unorderedVideoGames = {
+  mario: 'platformer',
+  halo: 'shooter',
+  zelda: 'adventure'
+};
+
+assertEqual(eqObjects(videoGames, unorderedVideoGames), true);
