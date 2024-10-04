@@ -1,5 +1,8 @@
 const eqArrays = function(arr1, arr2) {
   for (let i = 0; i < arr1.length; i++) {
+    if (arr1.length !== arr2.length) {
+      return false;
+    }
     if (arr1[i] !== arr2[i]) {
       return false;
     }
@@ -43,8 +46,10 @@ const assertObjectsEqual = function(actual, expected) {
 };
 
 const obj1 = {first: 1, second: 2, third: 3};
-
+const obj2 = {first: ['vegemite'], second: 2, third: 3};
 
 assertObjectsEqual(obj1, {first: 1, second: 2, third: 3});
 assertObjectsEqual(obj1, {first: 1, second: 22, third: 3});
+assertObjectsEqual(obj2, {first: ['vegemite'], second: 2, third: 3});
+assertObjectsEqual(obj2, {first: ['marmite'], second: 2, third: 3});
 
