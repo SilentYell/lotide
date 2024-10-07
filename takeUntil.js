@@ -42,4 +42,5 @@ const assertArraysEqual = function(arr1, arr2) {
   }
 };
 
-assertArraysEqual([1, 2, 3], [1, 2, 3]);
+assertArraysEqual(results1, [ 1, 2, 5, 7, 2 ]);
+assertArraysEqual(results2, [ 'I\'ve', 'been', 'to', 'Hollywood' ]);
