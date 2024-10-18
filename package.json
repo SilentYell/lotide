@@ -1,4 +1,9 @@
 {
+  "name": "@silentyell/lotide",
+  "version": "1.0.0",
+  "description": "A collection of utility functions similar to Lodash",
+  "main": "index.js",
+  "author": "Your Name <nikilobe@gmail.com>",
   "dependencies": {
     "lodash": "^4.17.21"
   },
