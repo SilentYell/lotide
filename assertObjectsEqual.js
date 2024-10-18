@@ -53,3 +53,4 @@ assertObjectsEqual(obj1, {first: 1, second: 22, third: 3});
 assertObjectsEqual(obj2, {first: ['vegemite'], second: 2, third: 3});
 assertObjectsEqual(obj2, {first: ['marmite'], second: 2, third: 3});
 
+module.exports = assertObjectsEqual;

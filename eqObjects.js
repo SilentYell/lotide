@@ -82,3 +82,5 @@ const unorderedVideoGames = {
 };
 
 assertEqual(eqObjects(videoGames, unorderedVideoGames), true);
+
+module.exports = eqObjects;

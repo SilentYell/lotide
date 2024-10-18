@@ -26,3 +26,5 @@ let result = countLetters('Foot work');
 assertEqual(result['o'], 3);
 assertEqual(result['F'], 1);
 assertEqual(result[''], undefined);
+
+module.exports = countLetters;
